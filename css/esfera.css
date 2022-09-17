@@ -34,6 +34,7 @@ body {
     left: 63px;
     transform: rotate(220deg);
     opacity: 80%;
+    box-shadow: 0 0 4px #fff;
 }
 
 .esfera::after {
@@ -47,6 +48,7 @@ body {
     left: 75px;
     transform: rotate(220deg);
     opacity: 80%;
+    box-shadow: 0 0 4px #fff;
 }
 
 .esfera span {
@@ -85,7 +87,7 @@ body {
 
 .esfera .fa-star {
     font-size: 1.8em;
-    color: #9A0C00;
+    color: #e70000;
 }
 
 .esfera #star_1 {

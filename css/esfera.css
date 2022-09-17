@@ -20,7 +20,7 @@ body {
     border-radius: 50%;
     background-color: #ffb713;
     box-shadow: 0 0 20px #ffb713;
-    animation: animate 3s linear infinite;
+    animation: animate 2s linear infinite;
 }
 
 .esfera::before {
@@ -31,7 +31,7 @@ body {
     border-radius: 50%;
     background-color: #fff;
     top: 25px;
-    left: 60px;
+    left: 63px;
     transform: rotate(220deg);
     opacity: 80%;
 }
@@ -39,12 +39,12 @@ body {
 .esfera::after {
     content: '';
     position: absolute;
-    width: 15px;
-    height: 30px;
+    width: 13px;
+    height: 25px;
     border-radius: 50%;
     background-color: #fff;
     top: 120px;
-    left: 70px;
+    left: 75px;
     transform: rotate(220deg);
     opacity: 80%;
 }
@@ -56,8 +56,8 @@ body {
 
 .esfera span:nth-child(1) {
     inset: 10px;
-    border-left: 12px solid #fff;
-    filter: blur(3px);
+    border-left: 15px solid #fff;
+    filter: blur(4px);
     transform: rotate(10deg);
     left: 0;
     top: 0;
@@ -66,13 +66,13 @@ body {
 .esfera span:nth-child(2) {
     inset: 10px;
     border-right: 15px solid #E55F00;
-    filter: blur(6px);
+    filter: blur(5px);
 }
 
 .esfera span:nth-child(3) {
     inset: 10px;
-    border-top: 10px solid #fff;
-    filter: blur(3px);
+    border-top: 15px solid #fff;
+    filter: blur(4px);
     top: 0;
     right: 0;
 }
@@ -80,7 +80,7 @@ body {
 .esfera span:nth-child(4) {
     inset: 20px;
     border-bottom: 15px solid #E55F00;
-    filter: blur(6px);
+    filter: blur(5px);
 }
 
 .esfera .fa-star {
@@ -133,10 +133,10 @@ body {
 @keyframes animate {
     
     0%, 100% {
-        transform: translateY(-20px);
+        transform: translateX(-15px);
     }
 
     50% {
-        transform: translateX(20px);
+        transform: translateX(15px);
     }
 }

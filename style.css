@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.esfera {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: #ffb713;
+    box-shadow: 0 0 20px #ffb713;
+    animation: animate 3s linear infinite;
+}
+
+.esfera::before {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 25px;
+    left: 60px;
+    transform: rotate(220deg);
+    opacity: 80%;
+}
+
+.esfera::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 120px;
+    left: 70px;
+    transform: rotate(220deg);
+    opacity: 80%;
+}
+
+.esfera span {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.esfera span:nth-child(1) {
+    inset: 10px;
+    border-left: 12px solid #fff;
+    filter: blur(3px);
+    transform: rotate(10deg);
+    left: 0;
+    top: 0;
+}
+
+.esfera span:nth-child(2) {
+    inset: 10px;
+    border-right: 15px solid #E55F00;
+    filter: blur(6px);
+}
+
+.esfera span:nth-child(3) {
+    inset: 10px;
+    border-top: 10px solid #fff;
+    filter: blur(3px);
+    top: 0;
+    right: 0;
+}
+
+.esfera span:nth-child(4) {
+    inset: 20px;
+    border-bottom: 15px solid #E55F00;
+    filter: blur(6px);
+}
+
+.esfera .fa-star {
+    font-size: 1.8em;
+    color: #9A0C00;
+}
+
+.esfera #star_1 {
+    position: absolute;
+    top: 120px;
+    left: 140px;
+}
+
+.esfera #star_2 {
+    position: absolute;
+    top: 120px;
+    left: 230px;
+}
+
+.esfera #star_3 {
+    position: absolute;
+    top: 195px;
+    left: 85px;
+}
+
+.esfera #star_4 {
+    position: absolute;
+    top: 195px;
+    left: 185px;
+}
+
+.esfera #star_5 {
+    position: absolute;
+    top: 195px;
+    left: 270px;
+}
+
+.esfera #star_6 {
+    position: absolute;
+    top: 275px;
+    left: 140px;
+}
+
+.esfera #star_7 {
+    position: absolute;
+    top: 275px;
+    left: 230px;
+}
+
+@keyframes animate {
+    
+    0%, 100% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+}

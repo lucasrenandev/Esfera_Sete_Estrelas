@@ -32,9 +32,9 @@ body {
     background-color: #fff;
     top: 25px;
     left: 63px;
-    transform: rotate(220deg);
+    transform: rotate(224deg);
     opacity: 80%;
-    box-shadow: 0 0 4px #fff;
+    box-shadow: 0 0 2px #fff;
 }
 
 .esfera::after {
@@ -46,9 +46,9 @@ body {
     background-color: #fff;
     top: 120px;
     left: 75px;
-    transform: rotate(220deg);
+    transform: rotate(224deg);
     opacity: 80%;
-    box-shadow: 0 0 4px #fff;
+    box-shadow: inset 0 0 2px #fff;
 }
 
 .esfera span {
